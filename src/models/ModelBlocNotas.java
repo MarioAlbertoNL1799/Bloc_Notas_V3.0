@@ -16,7 +16,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import views.ViewBlocNotas;
 
 /**
- *
+ *clase que contiene todos los metodos y variables para abrir, leer, guardar, encriptar y desencriptar archivos.
  * @author manl_
  */
 public class ModelBlocNotas {
@@ -132,6 +132,10 @@ public class ModelBlocNotas {
             System.err.println("Errior en la operacion de entrada/salida: "+err.getMessage());
         }
     }
+    /**
+     * Metodo que toma los valores de una cadena y hace una encriptacion de cada caracter
+     * cambiando el valor original y por otro diferente guardando el resultado nuevamente en la cadena
+     */
     public void encriptar(){
         char cadena[];
         cadena = message.toCharArray();
@@ -140,6 +144,10 @@ public class ModelBlocNotas {
         }
         message = String.valueOf(cadena);
     }
+    /**
+     * Metodo que toma los valores de una cadena y hace una desencriptacion de cada caracter
+     * cambiando el valor encriptado y por el original guardando el resultado nuevamente en la cadena
+     */
      public void desencriptar(){
         char cadena[];
         cadena = message.toCharArray();
