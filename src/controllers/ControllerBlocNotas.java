@@ -62,7 +62,7 @@ public class ControllerBlocNotas {
         initComponents();
     }
      /**
-      * Contructor que permite el cifrar y guardar el archivo leido, tomando como referencia un numero indicado 
+      * Metodo que permite el cifrar y guardar el archivo leido, tomando como referencia un numero indicado 
       * por el usuario
       */
      public void jmi_cifrar_actionPerformed(){
@@ -73,7 +73,7 @@ public class ControllerBlocNotas {
          modelBlocnotas.writeFile();
      }
      /**
-      * Constructor que permite leer archivos cifrados por este bloc de notas o similar tomando como
+      * Metodo que permite leer archivos cifrados por este bloc de notas o similar tomando como
       * referencia el valor indicado por el usuario
       */
      public void jmi_descifrar_actionPerformed(){
@@ -84,7 +84,7 @@ public class ControllerBlocNotas {
      }
      
      /**
-      * metodo que permite la visualizacion de la aplicacion de java
+      * Metodo que permite la visualizacion de la aplicacion de java
       */
      public void initComponents(){
          this.viewBlocnotas.setVisible(true);
